@@ -1,4 +1,4 @@
-#Setup
+# Setup
 
 ```
 npm install
@@ -6,7 +6,7 @@ npm install
 
 Then specify access to your AMQP in .env file
 
-#Usage
+# Usage
 
 Consumer - CLI script will connect to exchange and will listen to messages with routing key. 
 Messages will be added to console output in raw format.
