@@ -21,7 +21,7 @@ open
         return conn.createChannel();
     })
     .then(function(ch) {
-        return ch.assertQueue('').then(function(q) {
+        return ch.assertQueue('', {autoDelete: true}).then(function(q) {
             console.log(' [*] Queue generated ' + q.queue);
             ch.bindQueue(q.queue, exchange, routingKeyResults)
             console.log(' [*] Bind to routing key ' + routingKeyResults + ' and exchange ' + exchange);
