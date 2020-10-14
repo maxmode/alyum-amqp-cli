@@ -4,6 +4,7 @@
 npm install
 ```
 
+Then specify access to your AMQP in .env file
 
 #Usage
 
